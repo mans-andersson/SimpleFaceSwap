@@ -21,9 +21,9 @@ except OSError:
 for i, filename in enumerate(os.listdir(cage_folder)):
     if filename.endswith(".jpg"):
         img = Image.open(cage_folder + filename)
-        wpercent = (basewidth / float(img.size[0]))
-        hsize = int((float(img.size[1]) * float(wpercent)))
-        img = img.resize((basewidth, hsize), Image.ANTIALIAS)
+        # wpercent = (basewidth / float(img.size[0]))
+        # hsize = int((float(img.size[1]) * float(wpercent)))
+        img = img.resize((basewidth, basewidth), Image.ANTIALIAS)
         img.save(new_cage_folder + filename)
     else:
         continue
@@ -31,9 +31,9 @@ for i, filename in enumerate(os.listdir(cage_folder)):
 for i, filename in enumerate(os.listdir(trump_folder)):
     if filename.endswith(".jpg"):
         img = Image.open(trump_folder + filename)
-        wpercent = (basewidth / float(img.size[0]))
-        hsize = int((float(img.size[1]) * float(wpercent)))
-        img = img.resize((basewidth, hsize), Image.ANTIALIAS)
+        # wpercent = (basewidth / float(img.size[0]))
+        # hsize = int((float(img.size[1]) * float(wpercent)))
+        img = img.resize((basewidth, basewidth), Image.ANTIALIAS)
         img.save(new_trump_folder + filename)
     else:
         continue
