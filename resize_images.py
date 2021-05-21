@@ -5,8 +5,8 @@ from PIL import Image
 import os
 
 basewidth = 64
-cage_folder = './data/cage/'
-trump_folder = './data/trump/'
+cage_folder = './cropped_data/cage/'
+trump_folder = './cropped_data/trump/'
 resized_folder = './resized_data/'
 new_cage_folder = './resized_data/cage/'
 new_trump_folder = './resized_data/trump/'
