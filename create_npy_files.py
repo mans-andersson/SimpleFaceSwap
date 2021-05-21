@@ -28,6 +28,6 @@ def create_npy_from_image(images_folder, output_name, num_images, image_dim):
 
 DIM = 64 # The images have the size 256x256
 CAGE_SIZE = 306 # Number of Cage images
-TRUMP_SIZE = 331 # Number of Trump images
+TRUMP_SIZE = 315 # Number of Trump images
 create_npy_from_image("./resized_data/cage/", "cage.npy", CAGE_SIZE, DIM)
 create_npy_from_image("./resized_data/trump/", "trump.npy", TRUMP_SIZE, DIM)
